@@ -1,0 +1,13 @@
+#First Serrvice
+apiVersion: v1
+kind: Service
+metadata:
+ name: tredaservice
+spec:
+ ports:
+ - port: 80
+   targetPort: siteport
+   protocal: TCP
+selector:
+ app: firstapp
+type: NodePort
