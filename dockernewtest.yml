@@ -6,7 +6,7 @@ metadata:
  labels:
   app: firstapp
 spec:
- container:
+ containers:
  - name: firstapp
    image: tomcat
    ports:
