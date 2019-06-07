@@ -1,1 +1,14 @@
-my first file
+#First App
+apiVersion: v1
+kind: Pod
+metadata:
+ name: treda.test.com
+ labels:
+  app: firstapp
+spec:
+ container:
+ - name: firstapp
+   image: tomcat
+   ports:
+   - name: siteport
+     containerport: 3000
