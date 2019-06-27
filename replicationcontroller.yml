@@ -1,0 +1,20 @@
+#First App
+apiVersion: v1
+kind: ReplicationController
+metadata:
+ name: treda.test.com
+spec:
+ replicas: 2
+ selector:
+  app: helloworld
+ template:
+  metadata:
+   labels:
+    app: firstapp
+  spec:
+   containers:
+   - name: firstapp
+   image: tomcat   
+   ports:
+   - name: tredaport
+     containerPort: 8080
