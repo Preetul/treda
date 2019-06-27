@@ -14,7 +14,7 @@ spec:
   spec:
    containers:
    - name: firstcontainerapp
-   image: tomcat   
-   ports:
-   - name: tredaport
-     containerPort: 8080
+     image: tomcat   
+     ports:
+     - name: tredaport
+       containerPort: 8080
